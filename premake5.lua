@@ -28,6 +28,7 @@ project "spdlog"
 		systemversion "latest"
 		staticruntime "On"
 		buildoptions { "/utf-8" }
+		cppdialect "C++20"
 
 	filter { "system:windows", "configurations:Debug" }
 		runtime "Debug"
@@ -36,4 +37,4 @@ project "spdlog"
 	filter { "system:windows", "configurations:Release" }
 		runtime "Release"
 		optimize "on"
-		buildoptions "/MT"
+		-- buildoptions "/MT"
